@@ -2,8 +2,6 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
@@ -43,11 +41,41 @@ body, html {
 .btn:hover {
   background-color: RoyalBlue;
 }
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
 }
 </style>
 </head>
 <body>
-
+<div class="navbar">
+  <a href="#home">Rejoindrez le Discord</a>
+</div>
 <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px">TownCraft</h1>
@@ -55,8 +83,5 @@ body, html {
     <button class="btn"><i class="fa fa-download"></i> Télécharger</button>
   </div>
 </div>
-
-<p>Page Content..</p>
-
 </body>
 </html>
