@@ -43,6 +43,28 @@ body, html {
 .btn:hover {
   background-color: Gray;
 }
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 }
 </style>
 </head>
@@ -53,6 +75,19 @@ body, html {
     <p>Le modpack pour jouer au serveur de In-Game</p>
     <a class="btn" href="https://github.com/Spleeth/towncraft/raw/main/modpack.zip"><i class="fa fa-download"></i> Télécharger</a>
   </div>
+</div>
+  
+<button type="button" class="collapsible">Tutoriel</button>
+<div class="content">
+  <ul>
+  <li>1. Installer Forge 1.16.1.</li>
+  <li>2. Dézipper le modpack</li>
+  <li>3. Mettre son contenu dans le dossier mods au chemin d'accès suivant : "C:\Users\moi\AppData\Roaming\.minecraft\mods".</li>
+  <li>4. Créer une configuration forge 1.16.1 via le launcher officiel minecraft.</li>
+  <li>5. Lancer le jeu via cette configuration.</li>
+  <li>6. Ajouter le serveur avec l'adresse IP donnée sur In-Game.</li>
+  <li>7. Enjoy !</li>
+</ul>
 </div>
 
 
